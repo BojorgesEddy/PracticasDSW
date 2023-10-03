@@ -1,0 +1,33 @@
+#a{
+    background-color: greenyellow;/*color del fondo*/
+    margin-bottom: 2%; /*se da un margen desde abajo*/
+    border-radius: 5px; /*para darle un borde circular*/
+    border: 1px solid black; /*coloca un borde, el tamaño, solido y el color*/
+}
+
+#art{
+    background-color: rgb(235, 235, 119); /*color del fondo*/
+    margin-top: 4%; /*darle margen por la parte de arriba*/
+    margin-left: 5%;/* darle margen por la parte de la izquierda*/
+    margin-right: 5%;/*darle imagen por la parte de la derecha*/
+    border-radius: 5px;/*darle un borde cirucal*/
+    height: 9vh;/*que el tamaño de altura sea de 30%*/
+    border: 1px solid black; /*coloca un borde, el tamaño, solido y el color*/
+}
+
+aside{
+    float: left;/*hacer que el aside se alinea a la izquierda*/
+    height: 50vh;/* modifica la altura del aside*/
+    width: 45%; /*modifica la anchura del aside*/
+    margin-left: 3.7%; /* le da un margen de la izquierda al aside*/
+}
+
+footer{
+    clear: left; /*para que no se alinea a la izquierda y se quede en su lugar*/
+    height: 21.5vh;/*tamaño del footer*/
+}
+
+header {
+    height: 21.5vh;/*tamaño del header*/
+}
+
