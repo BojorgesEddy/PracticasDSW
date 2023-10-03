@@ -1,0 +1,45 @@
+.em{
+    background-color: aqua;
+    font-size: 1.5em; /* El tamaño de fuente es 1.5 veces el tamaño del elemento padre */
+    padding: 0.5em; /* Espaciado interno de 0.5 veces el tamaño de fuente del elemento padre */
+    margin: 1em; /* Márgenes de 1 vez el tamaño de fuente del elemento padre */
+    width: 20em; /* Ancho de 20 veces el tamaño de fuente del elemento padre */
+    height: 10em; /* Altura de 10 veces el tamaño de fuente del elemento padre */
+    letter-spacing: 0.1em; /* Espaciado entre caracteres de 0.1 veces el tamaño de fuente del elemento padre */
+    word-spacing: 0.5em; /* Espaciado entre palabras de 0.5 veces el tamaño de fuente del elemento padre */
+}
+
+.ex{
+    background-color: aquamarine;
+    font-size: 5ex; /* El tamaño de fuente es 5 veces la altura de la letra "x" del elemento padre */
+}
+
+.rem {
+    font-size: 3rem; /* El tamaño de fuente es 3 veces el tamaño de fuente del elemento raíz */
+  }
+
+.vw{
+    background-color: blue;
+    font-size: 4vw; /* El tamaño de fuente es el 4% del ancho del viewport */ 
+    width: 50vw; /* Ancho del elemento es el 50% del ancho del viewport */
+    height: 25vw; /* Altura del elemento es el 25% del ancho del viewport */
+}
+
+.vh{
+    background-color: aqua; 
+    height: 80vh; /* La altura de la sección es el 80% de la altura del viewport */
+    margin-top: 10vh; /* Margen superior de 10% de la altura del viewport */
+    padding-bottom: 5vh; /* Relleno inferior de 5% de la altura del viewport */  
+}
+
+.vmin{
+ background-color: bisque;
+ width: 50vmin; /* El ancho del elemento es el 50% de la dimensión más pequeña del viewport */
+ height: 30vmin; /* La altura del elemento es el 30% de la dimensión más pequeña del viewport */
+}
+
+.vmax{
+    background-color: blueviolet;
+    width: 50vmax; /* El ancho del elemento es el 60% de la dimensión más grande del viewport */
+    height: 30vmax; /* La altura del elemento es el 40% de la dimensión más grande del viewport */
+}
