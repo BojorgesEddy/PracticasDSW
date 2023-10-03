@@ -1,0 +1,16 @@
+
+/*Selecciona cada dos lineas del tr*/
+/*
+tr:nth-child(2n){
+    background: rgb(70%, 15%, 18%);
+}
+*/
+
+/*
+tr :nth-last-child(2n+1){
+    background: rgb(70%, 95%, 18%);
+}*/
+
+tr:empty{
+    display: none; /* Oculta párrafos vacíos */
+}

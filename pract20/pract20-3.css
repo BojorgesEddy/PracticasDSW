@@ -1,0 +1,67 @@
+/* Estilo para todos los elementos <li> dentro de una lista no ordenada <ul> */
+ul li {
+    border-bottom: 1px dotted #000; /* Línea punteada en la parte inferior */
+    font-size: 50px; /* Tamaño de fuente de 50px */
+}
+
+/* Estilo para el primer elemento <li> dentro de la lista no ordenada <ul> */
+li:first-child {
+    border-top: 1px dotted #AF0; /* Línea punteada en la parte superior */
+    background-color: #AF0; /* Fondo de color #AF0 */
+    border-bottom: none; /* Sin línea punteada en la parte inferior */
+    list-style-type: square; /* Marcador de lista en forma de cuadrado */
+}
+
+/* Estilo para el último elemento <li> dentro de la lista no ordenada <ul> */
+li:last-child {
+    color: #FF0; /* Texto de color #FF0 */
+    list-style-type: square; /* Marcador de lista en forma de cuadrado */
+}
+
+/* Estilo para el segundo párrafo <p> en el documento */
+p:nth-of-type(2) {
+    background: rgb(125, 178, 125); /* Fondo con color RGB (125, 178, 125) */
+}
+
+/* Estilo para el segundo elemento <em> desde el final en el documento */
+em:nth-last-of-type(2) {
+    background: rgb(125, 178, 125); /* Fondo con color RGB (125, 178, 125) */
+}
+
+
+/* Estilo por defecto del botón */
+.boton {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+/* Estilo cuando el botón está activo (haciendo clic) */
+ .boton:active {
+    background-color: #b92935;
+}
+  
+/* Estilo por defecto para el campo de entrada */
+.input-field{
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+/* Estilo cuando el campo de entrada está enfocado */
+.input-field:focus{
+    border-color: #3498db; /* Cambia el color del borde al azul cuando está enfocado */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Agrega una sombra cuando está enfocado */
+}
+  
+/* Estilo para párrafos en francés */
+p:lang(fr){
+    color: blue;
+}
+  
+/* Estilo para párrafos en alemán */
+p:lang(de){
+    color: green;
+}

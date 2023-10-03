@@ -1,0 +1,10 @@
+/*
+es una pseudo-clase que selecciona elementos que son el 
+penúltimo hijo (en orden descendente) de su elemento padre 
+y que cumplen con la fórmula 2n+1. En otras palabras, 
+selecciona elementos que tienen un índice impar entre los 
+últimos elementos de su tipo dentro de su elemento padre.
+*/
+section p:nth-last-child(2n+1){
+    background: rgb(70%, 95%, 18%);
+}
