@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+
+    background-color: greenyellow;
+    height: 13vh;
+    margin-bottom: 2%;
+}
+
+
+.nav{
+    background-color: greenyellow;
+    height: 13vh;
+    margin-bottom: 2%;   
+}
+
+#article{
+    background-color: skyblue;
+    float: left;
+    margin-left: 1%;
+    height: 53vh;
+    width: 25%;
+}
+
+.aside{
+    background-color: yellow;  
+    float: left;
+    margin-left: 1%;
+    height: 53vh;
+    width: 45%;
+}
+
+.footer{
+    background-color: blueviolet;
+    margin-top: 30%;
+    height: 10vh;
+}
