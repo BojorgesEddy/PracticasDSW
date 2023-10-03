@@ -1,0 +1,226 @@
+/*-------------ESTRUCTURA FIJA DE UNA PAGINA WEB-------------*/
+
+/*En esta estructura la pagina
+esta a lado izquierdo de la pagina
+con una medida que no cambia*/
+
+/*
+div#cabeza {
+    width: 750px; 
+    padding: 5px;
+    border: red solid 1px; 
+    }
+div#lateral {
+    width: 100px; 
+    padding: 5px;
+    height: 100%; 
+    float: left; 
+    border: blue solid 1px; 
+    }
+div#lateral ul{
+    padding-left: 16px;
+    border: green dotted 1px; 
+    }
+div#lateral ul li {
+    margin-left: 0; 
+    }
+div#contenido {
+    width: 638px; 
+    margin-left: 112px;
+    padding: 5px; 
+    border: green solid 1px; 
+    }
+div#contenido p {
+    text-align: justify; 
+    }
+div#pie {
+    width: 750px; 
+    padding: 5px;           
+    border: red solid 1px; 
+    }
+div.borra-flotacion {
+    clear: both; 
+    }  
+ */
+
+ 
+ /*Es esta estrutura fija la informacion
+ esta centrada pero de igual manera
+ los tamaños son fijos y esto no se ajustan
+ a la pantalla*/
+
+ /*
+ div#total {
+    width: 762px;
+    margin: auto;
+    border: maroon dashed 1px;
+    }
+div#cabeza {
+    padding: 5px;
+    border: red solid 1px; 
+    }
+div#lateral {
+    width: 100px; 
+    padding: 5px;
+    height: 100%; 
+    float: left; 
+    border: blue solid 1px; 
+    }
+div#lateral ul{
+    padding-left: 16px;
+    border: green dotted 1px; 
+    }
+div#lateral ul li {
+    margin-left: 0; 
+    }
+div#contenido { 
+    margin-left: 112px;
+    padding: 5px; 
+    border: green solid 1px; 
+    }
+div#contenido p {
+    text-align: justify; 
+    }
+div#pie { 
+    padding: 5px;           
+    border: red solid 1px; 
+    }
+div.borra-flotacion {
+    clear: both; 
+    }
+*/
+
+/*-------------ESTRUCTURA LIQUIDA DE UNA PAGINA WEB-------------*/
+/*En este caso la extructura se ajusta al tamaño de
+la ventana, a diferencia de  la anterios esta 
+funciona con % y no con px*/
+div#total {                     /* ancho 762px */
+    border: maroon dashed 1px;
+    }
+div#cabeza {
+    border: red solid 1px;
+    padding: 0.67%;             /* 5px/750px = 0.0067 */
+    }
+div#lateral {
+    width: 13.12%;              /* 100px/762px = 0.1312 */
+    height: 100%;
+    padding: 0.67%;             /* 5px/750px = 0.0067 */          
+    float: left;
+    border: blue solid 1px;
+    }
+div#lateral ul{
+    padding-left: 16%;         /* 16px/100px = 0.16 */   
+    border: green dotted 1px;
+    }
+div#lateral ul li {
+    margin-left: 0;
+    }
+div#contenido {
+    margin-left: 14.70%;        /* 112px/762px = 0.1470 */
+    padding: 0.67%;             /* 5px/750px = 0.0067 */
+    border: green solid 1px;
+    }
+div#contenido p {
+    text-align: justify;
+    }
+div#pie {
+    padding: 0.67%;            /* 5px/750px = 0.0067 */
+    border: red solid 1px;
+    }
+div.borra-flotacion {
+    clear: both;
+    }   
+
+/*En este lo que determina el tamaño es la cantidad de texto
+o elementos que tiene dentro del mismo, este se ajuta aun 
+tamaño de ancho minimo*/
+    body {
+        font-family: Times New Roman;
+        font-size: 1em;          /* 1em equivale a 16px por defecto */
+        }
+    div#total {
+        min-width: 40.625em;             /* 650px/16px = 40.625em */
+        border: maroon dashed 0.0625em;  /* 1px/16px = 0.0625em */
+        }
+    div#cabeza {
+        border: red solid 0.0625em;
+        padding: 0.3125em;               /* 5px/16px = 0.3125em */
+        }
+    div#lateral {
+        width: 6.25em;                   /* 100px/16px = 6.25em */
+        height: 100%;
+        padding: 0.3125em;                       
+        float: left;
+        border: blue solid 0.0625em;
+        }
+    div#lateral ul{
+        padding-left: 1em;               /* 16px/16px = 1em */   
+        border: green dotted 0.0625em;
+        }
+    div#lateral ul li {
+        margin-left: 0;
+        }
+    div#contenido {
+        /* Con el ancho del lateral del ejemplo anterior: 112px/16px = 7em
+        Que es lo mismo que sumar el ancho del lateral más sus dos
+        rellenos y bordes, todo sumado en em's:
+        6.25em + (2 x 0.3125em) + (2 x 0.0625em) = 7em
+        */
+        margin-left: 7em;
+        padding: 0.3125em;
+        border: green solid 0.0625em;
+        }
+    div#contenido p {
+        text-align: justify;
+        }
+    div#pie {
+        padding: 0.3125em;      
+        border: red solid 0.0625em;
+        }
+    div.borra-flotacion {
+        clear: both;
+        }    
+        
+/*Aqui agrega un baner con una imagen, la imagen
+que esta dentro no se ajusta ni el borde se ajuta 
+a la imagen*/
+        div#cabeza {
+            border: red solid 0.0625em;
+            padding: 0.3125em;   /* 5px/16px = 0.3125em */
+            background-image: url(banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font: 2em bold 'Arial Black';
+            color: red;
+        }
+
+        /*Por otro lado de esta manera, el borde se ajuta
+        al atamaño de la imagen y este muestra de manera completa,
+        de igual manera se le asigna el tamaño de altura y ancho 
+        a la imagen para que este no ocupe un tamaño mayor*/
+
+        div#cabeza {
+            border: red solid 0.0625em;
+            /*padding: 0.3125em; */     /* 5px/16px = 0.3125em */
+            font: 2em bold 'Arial Black';
+            color: red;
+            position: relative;
+            }
+        div#cabeza div.headvinc {
+            position: absolute;
+            left: 0.7em;
+            top: 0.7em;
+            z-index: 1;
+        }
+        div#cabeza img.banner {
+            width: 100%;
+        }
+
+        /*CONCLUCION*/
+        /*a mi parecer creo que el sistema liquido
+        es mucho mejor para una pagina web
+        ya que este se juata al tamaño de la venta
+        lo a mi parecer hace que sea mas facil la lectura
+        de la informacion en diferentes dispositivos, 
+        lo cual a diferencia de una fija no da ese dinamismo
+        y facilidad de lectura.*/
