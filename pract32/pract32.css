@@ -1,0 +1,12 @@
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding-top: 50px; 
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
