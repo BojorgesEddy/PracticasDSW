@@ -1,0 +1,487 @@
+<html lang="en" data-bs-theme="dark"><head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Blog Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    
+
+<div class="container">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#">INICIO</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-body-emphasis text-decoration-none" href="#">Turismo</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <!-- <a class="link-secondary" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"></circle><path d="M21 21l-5.2-5.2"></path></svg>
+        </a> -->
+        <a class="btn btn-sm btn-outline-secondary" href="loginAdmin.html">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+      <a class="nav-item nav-link link-body-emphasis" onclick="window.location.href='#historia'">Historia</a>
+      <a class="nav-item nav-link link-body-emphasis" onclick="window.location.href='#lugares'">Lugares Turisticos</a>
+      <a class="nav-item nav-link link-body-emphasis" onclick="window.location.href='#platillos'">Platillos Tipicos</a>
+      <a class="nav-item nav-link link-body-emphasis" onclick="window.location.href='#contacto'">Contacto</a>
+      <a class="nav-item nav-link link-body-emphasis" href="registro.html">Registro</a>
+    </nav>
+  </div>
+</div>
+
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+  </div>
+  <div class="carousel-inner" >
+    <div class="carousel-item" >
+      <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://images2.alphacoders.com/127/1278912.jpg'); background-size: cover; " aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1>Lugares Turisticos.</h1>
+          <p >
+            ¡Descubre la magia de Rusia! Sumérgete en un mundo lleno de contrastes,  <br> donde la historia cobra vida y la belleza se despliega en cada rincón.</p>
+          <p><a class="btn btn-lg btn-primary" onclick="window.location.href='#lugares'">Ver mas</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://images.musement.com/default/0002/06/thumb_105167_default_header.jpeg'); background-size: cover;" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Platillos Tipicos.</h1>
+          <p>¡Descubre la explosión de sabores de Rusia! Desde el vibrante Borsch hasta <br> los deliciosos blinis y el reconfortante Stroganoff, <br> la cocina rusa te transportará a un mundo de sabores únicos e inolvidables. ¡</p>
+          <p><a class="btn btn-lg btn-primary" onclick="window.location.href='#platillos'">Ver mas</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <svg class="bd-placeholder-img" width="100%" height="80%" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://farm6.staticflickr.com/5608/15732732066_4902a65c07_o.jpg'); background-size: cover;" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+      <div class="container">
+        <div class="carousel-caption text-end">
+          
+          <h1 style="color: rgb(0, 0, 0);">Comienza tu Viaje.</h1>
+          <p style="color: rgb(0, 0, 0);">Para comenzar tu viaje solo te tienes que resgistrar con nosotros <br> y nos encargaremos de lo demas, Registra ya dando el boton. </p>
+          <p><a class="btn btn-lg btn-primary" href="registro.html">Registrar</a></p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div><br>
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic">Rusia</h1>
+      
+      <p class="lead my-3">Descubre la exquisita gastronomía, los paisajes impresionantes, la meticulosidad artesanal y la calidez de su gente.</p>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Conoce un poco mas sobre Rusia.
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1" id="historia">Historia</h2>
+        <p class="blog-post-meta">Novimebre 27, 2023  </p>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1" id="historia"><span class="text-body-secondary">Rusia.</span></h2>
+            <p class="lead">Una nación que evoca la grandeza de los zares, la revolución y una rica herencia cultural, tiene una historia fascinante que se remonta a siglos atrás. Conocida por su vastedad geográfica y su influencia histórica, Rusia ha sido testigo de la grandeza de los imperios y los cambios políticos que han marcado el rumbo del mundo.
+
+              Desde la fundación de la Rus de Kiev en el siglo IX, pasando por la expansión del imperio bajo los zares hasta la Revolución Rusa en 1917, cada capítulo de su historia ha dejado una marca indeleble en su cultura y arquitectura.
+              
+              Los fastuosos palacios de San Petersburgo, la majestuosidad del Kremlin en Moscú y la riqueza artística del Museo Hermitage son testimonios vivientes de la grandeza imperial. A través de guerras, revoluciones y cambios políticos, Rusia ha emergido como una nación que fusiona su rica historia con una modernidad vibrante, invitando a los viajeros a explorar sus profundidades culturales y sus paisajes impresionantes.</p>
+          </div>
+          <div class="col-md-5">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="900" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://thumbs.dreamstime.com/b/rusia-calendario-vertical-moscow-kremlin-ilustraci%C3%B3n-vectorial-del-imagen-retro-mosc%C3%BA-catedral-plaza-roja-198735044.jpg'); background-size: cover;" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+          </div>
+        </div>
+        <p></p>
+        <hr>
+       
+        
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+          <h2 id="lugares">Lugares Turisticos</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://beaviajera.com/wp-content/uploads/2019/06/moscu-20-1024x768.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Plaza Roja (Moscú)</h3>
+                    <p class="card-text"> Centro neurálgico de la capital, alberga la icónica Catedral de San Basilio y el imponente Kremlin, testigos de la historia rusa.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://diarium.usal.es/alumniguybrush20/files/2021/03/hermitage.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Museo Hermitage (San Petersburgo)</h3>
+                    <p class="card-text">Uno de los museos más grandes y prestigiosos del mundo, alberga una colección impresionante de arte, desde antigüedades hasta obras maestras de artistas reconocidos.</p>
+                    <div class="d-flex justify-content-between align-item">
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://viajerosocultos.com/wp-content/uploads/2021/06/breathtaking-shot-of-beautiful-frozen-lake-surrounded-by-snowy-mountains-during-sunny-day.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Lago Baikal (Siberia)</h3>
+                    <p class="card-text">Considerado el lago más antiguo y profundo del mundo, con aguas cristalinas y una biodiversidad única, es un paraíso para los amantes de la naturaleza y el trekking.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/63/14/f1/caption.jpg?w=1200&h=-1&s=1'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Palacio de Peterhof (San Petersburgo)</h3>
+                    <p class="card-text">Conocido como el "Versalles ruso", este palacio y sus jardines espectaculares son una muestra de la opulencia de los zares.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cd/Teatro_Bolsh%C3%B3i%2C_Mosc%C3%BA%2C_Rusia%2C_2016-10-03%2C_DD_42-43_HDR.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Teatro Bolshói (Moscú)</h3>
+                    <p class="card-text">Una joya arquitectónica y un templo de la ópera y el ballet, donde se han presentado algunas de las producciones más célebres del mundo.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://mediaim.expedia.com/destination/1/b9ad52f5eb3b57ebd48079a0182ffc69.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Kazán (Tatarstán)</h3>
+                    <p class="card-text">Una ciudad que fusiona culturas, con la impresionante Mezquita Kul Sharif y el Kremlin de Kazán, símbolos de la diversidad religiosa y arquitectónica.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Saint_Isaac%27s_Cathedral_in_SPB.jpeg/800px-Saint_Isaac%27s_Cathedral_in_SPB.jpeg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Catedral de San Isaac (San Petersburgo)</h3>
+                    <p class="card-text">Con su cúpula dorada y su arquitectura deslumbrante, ofrece vistas panorámicas de la ciudad desde lo alto.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/38/Kishi_church_0.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Kizhi Island (Karelia)</h3>
+                    <p class="card-text">Hogar de la Iglesia de la Transfiguración, construida íntegramente en madera sin un solo clavo, es un ejemplo único de arquitectura rusa tradicional.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://fotografias.lasexta.com/clipping/cmsimages02/2020/10/13/491AFCEE-79CD-4A87-880D-F58AEE2FEF66/98.jpg?crop=1280,720,x0,y58&width=1900&height=1069&optimize=high&format=webply'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Valle de los Geiseres (Kamchatka)</h3>
+                    <p class="card-text">Una maravilla natural con más de 20 géiseres activos, una espectacular exhibición de fuerzas geotérmicas.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        
+                        
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <hr>
+        
+        
+        
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+          <h3 id="platillos">Platillos Tipicos</h3>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://i.blogs.es/a04947/blinis1/1366_2000.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Blíni</h3>
+                    <p class="card-text"> Crepes rusos delgados y esponjosos, servidos con una variedad de rellenos como caviar, crema agria, mermelada o queso.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://www.recipetineats.com/wp-content/uploads/2018/01/Beef-Stroganoff_2-1-1.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Stroganoff</h3>
+                    <p class="card-text">Trozos de carne (tradicionalmente filete) cocinados en una salsa cremosa con champiñones, cebolla y a menudo se sirve con arroz o puré de patatas.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://previews.123rf.com/images/ogovorka/ogovorka1703/ogovorka170300002/73583017-pirozhki-ruso-empanadas-al-horno-o-pasteles-en-la-cesta-con-queso-y-champi%C3%B1ones.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Pirozhki</h3>
+                    <p class="card-text">Empanadas rellenas de carne, repollo, patata, setas o frutas, horneadas o fritas hasta obtener una masa dorada y crujiente.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://blissismyfood.sathyasai.org/wp-content/uploads/2016/10/4.-Final-Photo-600x400.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Golubtsy</h3>
+                    <p class="card-text">Hojas de col rellenas de carne picada y arroz, cocidas y luego servidas con salsa de tomate o crema agria.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://www.recipesfromeurope.com/wp-content/uploads/2022/11/smoked-meat-soup-solyanka.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Solyanka</h3>
+                    <p class="card-text">Una sopa espesa y picante con una variedad de carnes (como cerdo, ternera o salchichas), encurtidos, aceitunas y limón.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6d/Fish_pie.JPG'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Pirog</h3>
+                    <p class="card-text">Pastel o tarta rellena de carne, pescado, repollo, frutas o bayas, elaborado con una masa crujiente o suave.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/273px-Borscht_served.jpg'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Borsch</h3>
+                    <p class="card-text"> Una sopa de remolacha vibrante y nutritiva, con carne, col, zanahorias y patatas, a menudo acompañada de crema agria.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" style="background-image: url('https://cdn.ready-market.ai/101/21cd62de//Templates/pic/ANKO-Pelmeni-1200x1200.jpg?v=94d9c210'); background-size: cover;" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                  <div class="card-body">
+                    <h3>Pelmeni</h3>
+                    <p class="card-text"> Pequeños dumplings rellenos de carne, típicamente de cerdo, ternera o una mezcla de ambas, servidos con crema agria o mantequilla.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <article class="blog-post">
+       </article>
+
+      <!-- <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+        <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
+      </nav> -->
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic" id="contacto">Sobre Nosotros</h4>
+          <p class="mb-0">Universidad Autonoma de Baja California, Facultad de Contaduria y Administracion. <br><br> Diseño de Sitios Web. <br><br> Licenciatura en Informática</p>
+        </div>
+
+        <div>
+          <h4 class="fst-italic">Integrantes</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" style="background-image: url('img/eddy.png'); background-size: cover;" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                <!-- <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <img src="https://humanidades.com/wp-content/uploads/2017/07/japon-7-e1571188430646.jpg" alt="" style="height: 1%; width:40%;"> -->
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Bojorges Romero Eddy Abraham</h6>
+                  <small class="text-body-secondary">bojorges.eddy@uabc.edu.mx</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" style="background-image: url('img/jona.png'); background-size: cover;" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"></svg>
+                <!-- <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+                <img src="https://humanidades.com/wp-content/uploads/2017/07/japon-7-e1571188430646.jpg" alt="" style="height: 1%; width:40%;"> -->
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Escobedo Rojo Jonathan Josue</h6>
+                  <small class="text-body-secondary">escobedo.jonathan@uabc.edu.mx</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <hr>
+</main>
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  
+  <p class="mb-0">
+    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="#">Volver Arriba</a></button>  
+  </p>
+</footer>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+
+</body></html>
